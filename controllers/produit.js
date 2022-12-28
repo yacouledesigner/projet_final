@@ -23,7 +23,7 @@ const deleteProduct = async (req,res)=>{
 
 const updateProduct = async (req, res)=>{
 
-    const data = await fonctionModel.findOneAndUpdate({_id: req.params._id}, req.body);
+    const data = await productModel.findOneAndUpdate({_id: req.params._id}, req.body);
     res.status(200).json(data)
 }
 
